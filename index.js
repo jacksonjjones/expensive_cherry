@@ -2,8 +2,13 @@ const inquirer = require("inquirer");
 const fs = require('fs');
 const { Square, Triangle, Circle } = require("./lib/shapes");
 
-// Function to create the SVG and write to file
 function writeToFile(filename, answers) {
+    let svgString = "";
+
+    // Opening SVG tag with width and height attributes
+    svgString = '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">';
+
+    // Shape content
     let shape;
     switch (answers.shape.toLowerCase()) {
         case 'square':
@@ -17,14 +22,23 @@ function writeToFile(filename, answers) {
             break;
     }
 
-    // Set the text color and shape color
+    // Set the shape color
     shape.setColor(answers['shape-color']);
 
     // Render the shape as SVG
-    const svgContent = shape.render();
+    const shapeContent = shape.render();
+
+    // Append the shape SVG content to the group
+    svgString += shapeContent;
+
+    // Text content
+    svgString += `<text x="150" y="110" text-anchor="middle" font-size="40" fill="${answers['text-color']}">${answers.text}</text>`;
+
+    // Closing SVG tag
+    svgString += "</svg>";
 
     // Write the SVG content to a file
-    fs.writeFile(filename, svgContent, (err) => {
+    fs.writeFile(filename, svgString, (err) => {
         if (err) {
             console.error('Error writing to file:', err);
         } else {
@@ -72,4 +86,3 @@ function init() {
 
 // Function call to initialize app
 init();
-
