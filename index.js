@@ -42,7 +42,7 @@ function writeToFile(filename, answers) {
         if (err) {
             console.error('Error writing to file:', err);
         } else {
-            console.log(`SVG file "${filename}" created successfully.`);
+            console.log(`Generated ${filename}`);
         }
     });
 }
@@ -79,6 +79,7 @@ function init() {
                 console.log("Must enter a value up to 3 characters long");
                 init();
             } else {
+                console.log("answers:", answers);
                 writeToFile("logo.svg", answers);
             }
         });
