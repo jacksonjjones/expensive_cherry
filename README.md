@@ -33,6 +33,6 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
 ## Screenshots of working app!
 
-![Screenshot of Deployed app](svg_answers_screenshot.png)
+![Screenshot of Deployed app](screenshots/svg_answers_screenshot.png)
 
-![Screenshot of Deployed app](svg_tests_screenshot.png)
+![Screenshot of Deployed app](screenshots/svg_tests_screenshot.png)
