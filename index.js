@@ -32,7 +32,7 @@ function writeToFile(filename, answers) {
     svgString += shapeContent;
 
     // Text content
-    svgString += `<text x="150" y="110" text-anchor="middle" font-size="40" fill="${answers['text-color']}">${answers.text}</text>`;
+    svgString += `<text x="150" y="110" text-anchor="middle" font-size="30" fill="${answers['text-color']}">${answers.text}</text>`;
 
     // Closing SVG tag
     svgString += "</svg>";
