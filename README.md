@@ -31,8 +31,14 @@ WHEN I open the `logo.svg` file in a browser
 THEN I am shown a 300x200 pixel image that matches the criteria I entered
 ```
 
+## Video of working app!
+[Module-10_video.webm](https://github.com/jacksonjjones/expensive_cherry/assets/152823903/4513eb5f-7b79-4b26-86bd-c894b50fda2a)
+
+## Link to video of working app!
+https://drive.google.com/file/d/11n1dLi8-XCx9YDQWZ7wxnKoSJLElrKMS/view
+
 ## Screenshots of working app!
 
-![Screenshot of Deployed app](svg_answers_screenshot.png)
+![Screenshot of Deployed app](screenshots/svg_answers_screenshot.png)
 
-![Screenshot of Deployed app](svg_tests_screenshot.png)
+![Screenshot of Deployed app](screenshots/svg_tests_screenshot.png)
