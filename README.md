@@ -1,8 +1,8 @@
 # expensive_cherry
 
-## Description
+## Module 10 Challenge
 
-This is the module 10 challenge
+The task for this challenge was to build a Node.js command-line application that takes in user input to generate a log and save it as an SVG file. The application prompts the user to select a color and shape, provide text for the logo, and save the generated SVG to a logo.svg file.
 
 ### User Story
 
@@ -30,3 +30,9 @@ AND the output text "Generated logo.svg" is printed in the command line
 WHEN I open the `logo.svg` file in a browser
 THEN I am shown a 300x200 pixel image that matches the criteria I entered
 ```
+
+## Screenshots of working app!
+
+![Screenshot of Deployed app](svg_answers_screenshot.png)
+
+![Screenshot of Deployed app](svg_tests_screenshot.png)
